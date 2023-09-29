@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensaje con Fondo en Movimiento</title>
+    <style>
+        /* Estilos CSS para el fondo en movimiento */
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .fondo {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: linear-gradient(45deg, #ff66b3, #a30aa3, #ff66b3, #e900e9);
+            background-size: 400% 400%;
+            animation: fondoAnimado 15s ease infinite;
+        }
+
+        /* Estilos CSS para el mensaje */
+        .mensaje {
+            text-align: center;
+            padding: 100px;
+            font-size: 24px;
+            color: white;
+        }
+
+        /* Estilos CSS para el botón interactivo */
+        .boton {
+            background-color: #ff0066;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        .boton:hover {
+            background-color: #ff33cc;
+        }
+
+        /* Animación para el fondo en movimiento */
+        @keyframes fondoAnimado {
+            0% {
+                background-position: 0% 50%;
+            }
+            100% {
+                background-position: 100% 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="fondo"></div>
+    <div class="mensaje">
+        <h1>Mensaje </h1>
+        <p>En este momento, quiero decirte que eres una chica muy inteligente,  que cumplir todas sus metas y lograra llegar hasta donde te lo propongas.</p>
+        <button class="boton" onclick="mostrarMensaje()">Mostrar Mensaje</button>
+        <p id="mensajeOculto" style="display: none;">No tienes que ser grande para empezar. Pero tienes que empezar para poder ser grande, Tienes el poder de crear la vida de tus sueños.</p>
+    </div>
+
+    <script>
+        // Función para mostrar el mensaje oculto
+        function mostrarMensaje() {
+            const mensajeOculto = document.getElementById("mensajeOculto");
+            mensajeOculto.style.display = "block";
+        }
+    </script>
+</body>
+</html>
+img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+<img src="2dd1f0d601311527c878a67b6d74226b.gif" alt="Imagen Romántica">
+</div>
+</body>
+</html>
